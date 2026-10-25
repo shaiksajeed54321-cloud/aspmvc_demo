@@ -1,0 +1,12 @@
+@model Product
+@{
+    ViewData["Title"] = "Create Product";
+}
+<h1 class="h3">Create Product</h1>
+<div class="col-md-6">
+    <form asp-action="Create">
+        <partial name="_Form" model="Model" />
+        <button type="submit" class="btn btn-success">Create</button>
+        <a asp-action="Index" class="btn btn-link">Back to list</a>
+    </form>
+</div>
